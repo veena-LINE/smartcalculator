@@ -327,7 +327,7 @@ class Calculator:
                 continue
 
             # PURE NUMERIC INPUT : echo
-            if self.user_input.replace(".", '').isnumeric():
+            if self.user_input.replace(".", '').isnumeric() or self.check_negative(self.user_input):
                 print(self.__SPACING + calc.user_input, end='\n\n')
                 continue
 
